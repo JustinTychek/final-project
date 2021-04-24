@@ -1,0 +1,99 @@
+.blog-content {
+  min-height: 600px;
+  margin-bottom: 85px;
+  .blog-title-holder {
+    width: 980px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    // background-color: blue;
+    .blog-title {
+      font-size: 25px;
+      font-family: GillSans;
+      font-weight: normal;
+      border-bottom: solid black 2px;
+      width: 170px;
+      padding-bottom: 6px;
+    }
+  }
+
+  .blog-flex {
+    max-width: 980px;
+    min-height: 297px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .blog-event {
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+      width: 460px;
+      height: 257px;
+      .blog-calendar-box {
+        width: 60px;
+        height: 60px;
+        background-color: $site-pink;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .date {
+          color: white;
+          font-family: GillSans;
+          margin-bottom: 0px;
+          font-size: 22px;
+          font-weight: bold;
+        }
+        .month {
+          color: white;
+          font-family: GillSans;
+          margin-bottom: 0px;
+          font-size: 12px;
+        }
+      }
+
+      .blog-event-content {
+        width: 380px;
+        .blog-image {
+          width: 380px;
+          height: 140px;
+          background-image: url(../images/blog.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+        .blog-event-title {
+          text-decoration: none;
+          font-size: 15px;
+          font-family: GillSans;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          color: black;
+        }
+        .blog-event-paragraph {
+          font-size: 15px;
+          font-family: GillSans;
+          color: $site-pink;
+        }
+      }
+    }
+  }
+}
+
+@media only all and (max-width: 1000px) {
+  .blog-content {
+    .blog-title-holder {
+      margin-left: 20px;
+    }
+
+    .blog-flex {
+      flex-direction: column;
+      //   justify-content: center;
+      align-items: center;
+
+      .blog-event {
+        margin-bottom: 45px;
+      }
+    }
+  }
+}

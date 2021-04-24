@@ -1,0 +1,229 @@
+.gallery-pages {
+  max-width: 980px;
+  margin: 0 auto;
+  .gallery-image-1 {
+    margin-top: 50px;
+    height: 400px;
+    background-image: linear-gradient(
+        to right,
+        $yellow-overlay,
+        $yellow-overlay
+      ),
+      url(../images/gallery/1.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .gallery-image-2 {
+    margin-top: 50px;
+    height: 400px;
+    background-image: linear-gradient(to right, $pink-overlay, $pink-overlay),
+      url(../images/gallery/2.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .gallery-image-3 {
+    margin-top: 50px;
+    height: 400px;
+    background-image: linear-gradient(to right, $green-overlay, $green-overlay),
+      url(../images/gallery/3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .gallery-image-4 {
+    margin-top: 50px;
+    height: 400px;
+    background-image: linear-gradient(
+        to right,
+        $purple-overlay,
+        $purple-overlay
+      ),
+      url(../images/gallery/4.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .gallery-image-5 {
+    margin-top: 50px;
+    height: 400px;
+    background-image: linear-gradient(to right, $blue-overlay, $blue-overlay),
+      url(../images/gallery/5.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .gallery-page-title {
+    display: flex;
+    .num-1 {
+      color: $site-yellow;
+      font-family: GillSans;
+      font-size: 300px;
+      margin-top: -280px;
+      margin-right: 20px;
+      text-shadow: 1px 1px 12px $text-shadow;
+    }
+
+    .num-2 {
+      color: $site-pink;
+      font-family: GillSans;
+      font-size: 300px;
+      margin-top: -280px;
+      margin-right: 20px;
+      text-shadow: 1px 1px 12px $text-shadow;
+    }
+
+    .num-3 {
+      color: $site-green;
+      font-family: GillSans;
+      font-size: 300px;
+      margin-top: -280px;
+      margin-right: 20px;
+      text-shadow: 1px 1px 12px $text-shadow;
+    }
+
+    .num-4 {
+      color: $site-purple;
+      font-family: GillSans;
+      font-size: 300px;
+      margin-top: -280px;
+      margin-right: 20px;
+      text-shadow: 1px 1px 12px $text-shadow;
+    }
+
+    .num-5 {
+      color: $site-blue;
+      font-family: GillSans;
+      font-size: 300px;
+      margin-top: -280px;
+      margin-right: 20px;
+      text-shadow: 1px 1px 12px $text-shadow;
+    }
+
+    .title-1 {
+      color: $site-yellow;
+      font-family: GillSans;
+      font-size: 140px;
+      margin-top: -130px;
+      text-shadow: 1px 1px 12px $text-shadow;
+    }
+
+    .title-2 {
+      color: $site-pink;
+      font-family: GillSans;
+      font-size: 140px;
+      margin-top: -130px;
+      text-shadow: 1px 1px 12px $text-shadow;
+    }
+
+    .title-3 {
+      color: $site-green;
+      font-family: GillSans;
+      font-size: 140px;
+      margin-top: -130px;
+      text-shadow: 1px 1px 12px $text-shadow;
+    }
+
+    .title-4 {
+      color: $site-purple;
+      font-family: GillSans;
+      font-size: 130px;
+      margin-top: -130px;
+      text-shadow: 1px 1px 12px $text-shadow;
+    }
+
+    .title-5 {
+      color: $site-blue;
+      font-family: GillSans;
+      font-size: 140px;
+      margin-top: -130px;
+      text-shadow: 1px 1px 12px $text-shadow;
+    }
+  }
+
+  .gallery-paragraph {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -30px;
+    margin-bottom: 73px;
+    .gallery-paragraph-1 {
+      max-width: 490px;
+      font-size: 16px;
+      font-family: GillSans;
+      font-style: italic;
+    }
+
+    .gallery-paragraph-2 {
+      max-width: 451px;
+      font-size: 16px;
+      font-family: GillSans;
+      font-style: italic;
+    }
+  }
+}
+
+@media only all and (max-width: 983px) {
+  .gallery-pages {
+    .gallery-page-title {
+      .num-1 {
+        font-size: 115px;
+        margin-top: -108px;
+      }
+
+      .title-1 {
+        font-size: 75px;
+        margin-top: -70px;
+      }
+
+      .num-2 {
+        font-size: 115px;
+        margin-top: -108px;
+      }
+
+      .title-2 {
+        font-size: 75px;
+        margin-top: -70px;
+      }
+
+      .num-3 {
+        font-size: 115px;
+        margin-top: -108px;
+      }
+
+      .title-3 {
+        font-size: 75px;
+        margin-top: -70px;
+      }
+
+      .num-4 {
+        font-size: 110px;
+        margin-top: -103px;
+      }
+
+      .title-4 {
+        font-size: 65px;
+        margin-top: -62px;
+      }
+
+      .num-5 {
+        font-size: 115px;
+        margin-top: -108px;
+      }
+
+      .title-5 {
+        font-size: 75px;
+        margin-top: -70px;
+      }
+    }
+    .gallery-paragraph {
+      flex-direction: column;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-top: 30px;
+      .gallery-paragraph-1 {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

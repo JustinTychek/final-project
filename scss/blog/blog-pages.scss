@@ -1,0 +1,76 @@
+.blog-pages {
+  max-width: 980px;
+  margin: 0 auto;
+  header {
+    max-width: 980px;
+    height: 300px;
+    background-image: linear-gradient(to right, $pink-overlay, $pink-overlay),
+      url(../images/blog.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .blog-header-calendar {
+      width: 155px;
+      height: 155px;
+      background-color: $site-pink;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .calendar-date {
+        color: white;
+        font-family: GillSans;
+        margin-bottom: 0px;
+        font-size: 55px;
+        font-weight: bold;
+      }
+      .calendar-month {
+        color: white;
+        font-family: GillSans;
+        margin-bottom: 0px;
+        font-size: 31px;
+      }
+    }
+  }
+
+  .blog-page-header {
+    font-size: 20px;
+    font-family: GillSans;
+    color: $site-pink;
+    margin-bottom: 25px;
+  }
+
+  .blog-page-paragraph {
+    max-width: 856px;
+    font-size: 20px;
+    font-family: GillSans;
+    margin-bottom: 45px;
+  }
+
+  .blog-filler {
+    height: 40px;
+  }
+
+  .blog-filler-2 {
+    height: 135px;
+  }
+}
+
+@media only all and (max-width: 1020px) {
+  .blog-pages {
+    .blog-page-header {
+      margin-left: 15px;
+    }
+
+    .blog-page-paragraph {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+}

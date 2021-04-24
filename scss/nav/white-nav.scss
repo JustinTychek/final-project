@@ -1,0 +1,83 @@
+.white-nav {
+  max-width: 980px;
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+  border-bottom: white solid 2px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 18px;
+  z-index: 99;
+
+  .logo {
+    height: 42px;
+    width: 92px;
+    background-image: url(../images/logo/logo-white.svg);
+  }
+
+  .links {
+    height: 42px;
+    max-width: 542px;
+    align-self: center;
+    display: flex;
+    font-size: 15px;
+    font-family: GillSans;
+
+    a {
+      text-decoration: none;
+      color: white;
+      margin: auto;
+      // border-right: magenta solid 1.5px;
+      padding-right: 20px;
+      padding-left: 20px;
+      // put a  | between the anchor tags and style that
+    }
+
+    span {
+      font-size: 30px;
+      margin-top: 5px;
+      color: $site-pink;
+    }
+
+    .contact-link {
+      border-right: none;
+      margin-right: -20px;
+    }
+  }
+}
+
+@media only all and (max-width: 1020px) {
+  .white-nav {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+@media only all and (max-width: 650px) {
+  .white-nav {
+    .logo {
+    }
+    .links {
+      a {
+        // font-size: 13px;
+        padding-right: 12px;
+        padding-left: 12px;
+      }
+    }
+  }
+}
+
+@media only all and (max-width: 550px) {
+  .white-nav {
+    .logo {
+    }
+    .links {
+      a {
+        // font-size: 13px;
+        padding-right: 7px;
+        padding-left: 7px;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "variables.scss";
+@import "structure.scss";
+
+//nav styles
+@import "nav/white-nav.scss";
+@import "nav/black-nav.scss";
+
+//home styles
+@import "home/home.scss";
+
+//about styles
+@import "about/about.scss";
+
+//footer styles
+@import "footer.scss";
+
+//gallery styles
+@import "gallery/gallery.scss";
+@import "gallery/gallery-pages.scss";
+
+//blog styles
+@import "blog/blog.scss";
+@import "blog/blog-pages.scss";
+
+//contact styles
+@import "contact/contact.scss";

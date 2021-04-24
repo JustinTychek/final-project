@@ -1,0 +1,135 @@
+.gallery-content {
+  .gallery-title-holder {
+    width: 980px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    // background-color: blue;
+    .gallery-title {
+      font-size: 25px;
+      font-family: GillSans;
+      font-weight: normal;
+      border-bottom: solid black 2px;
+      width: 170px;
+      padding-bottom: 6px;
+    }
+  }
+
+  .gallery-images-holder {
+    max-width: 980px;
+    min-height: 513px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    // background-color: palevioletred;
+    .gallery-flex-1 {
+      display: flex;
+      justify-content: space-between;
+      min-height: 187px;
+      max-width: 980px;
+
+      .food-image {
+        height: 187px;
+        width: 489px;
+        background-image: linear-gradient(
+            to right,
+            $yellow-overlay,
+            $yellow-overlay
+          ),
+          url(../images/gallery/1.png);
+        background-position: center;
+        background-size: cover;
+      }
+
+      .crowd-image {
+        height: 187px;
+        width: 187px;
+        background-image: linear-gradient(
+            to right,
+            $pink-overlay,
+            $pink-overlay
+          ),
+          url(../images/gallery/2.jpeg);
+        background-position: center;
+        background-size: cover;
+      }
+
+      .speaker-image {
+        height: 187px;
+        width: 265px;
+        background-image: linear-gradient(
+            to right,
+            $green-overlay,
+            $green-overlay
+          ),
+          url(../images/gallery/3.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+    }
+
+    .gallery-flex-2 {
+      display: flex;
+      justify-content: space-between;
+      min-height: 306px;
+      max-width: 980px;
+      margin-top: 20px;
+
+      .foodfest-image {
+        height: 306px;
+        width: 603px;
+        background-image: linear-gradient(
+            to right,
+            $purple-overlay,
+            $purple-overlay
+          ),
+          url(../images/gallery/4.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+
+      .toronto-image {
+        height: 306px;
+        width: 355px;
+        background-image: linear-gradient(
+            to right,
+            $blue-overlay,
+            $blue-overlay
+          ),
+          url(../images/gallery/5.png);
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+@media only all and (max-width: 1000px) {
+  .gallery-content {
+    .gallery-title-holder {
+      margin-left: 20px;
+    }
+
+    .gallery-images-holder {
+      .gallery-flex-1 {
+        // margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        .crowd-image {
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+      }
+
+      .gallery-flex-2 {
+        // margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+
+        .toronto-image {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
